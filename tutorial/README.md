@@ -22,10 +22,15 @@ Scanne folgenden QR-Code und installiere die App (Tutorial zu Installation von A
 
 Beim Starten der App wird nach App-Erlaubnissen gefragt, die für die Funktionalität der App notwending sind: 
 
+```
 {:refdef: style="text-align: center;"}
+```
+
 <img src="./LaTeX/start_per.png" alt="Erlaubnisnachfrage beim Start" />
 
+```
 {: refdef}
+```
 
 
 
