@@ -14,34 +14,46 @@
 
 Scanne folgenden QR-Code und installiere die App (Tutorial zu Installation von APKs: https://www.heise.de/tipps-tricks/Externe-Apps-APK-Dateien-bei-Android-installieren-so-klappt-s-3714330.html):
 
-<center><img src="../tutorial/LaTeX/frame.png" alt="QR-Code" /></center>
+{:refdef: style="text-align: center;"}
+<img src="../tutorial/LaTeX/frame.png" alt="QR-Code" />
+{: refdef}
 
 ### Erlaubnisse 
 
 Beim Starten der App wird nach App-Erlaubnissen gefragt, die für die Funktionalität der App notwending sind: 
 
-<center><img src="./LaTeX/start_per.png" alt="Erlaubnisnachfrage beim Start" /></center>
+{:refdef: style="text-align: center;"}
+<img src="./LaTeX/start_per.png" alt="Erlaubnisnachfrage beim Start" />
+
+{: refdef}
 
 
 
 Bitte ''Ja'' auswählen, dann taucht eine Liste der installierten Apps auf. Hier soll dann entsprechend die ''Lernstudie'' ausgewählt werden:
 
-<center> <img src="./LaTeX/list_per.png" alt="Liste der installierten Apps" /> </center>
+{:refdef: style="text-align: center;"}
+<img src="./LaTeX/list_per.png" alt="Liste der installierten Apps" /> 
+
+{: refdef}
 
 
 
 Zuletzt soll hier die Erlaubnis gegeben werden und fertig: 
 
-<center><img src="./LaTeX/item_per.png" alt="Einzelne App" /> </center>
+{:refdef: style="text-align: center;"}
+<img src="./LaTeX/item_per.png" alt="Einzelne App" />
+
+{: refdef}
 
 
 
 
 Falls ''Nein'' oder ''Nicht erinnern'' am Anfang ausgewählt wurde, so kann man die Erlaubnisse nachträglich in den Einstellungen geben (Zahnrad im ersten Bild):
 
-<center><img src="./LaTeX/settings_per.png" alt="Einstellungen-Erlaubnisse" /> </center>
+{:refdef: style="text-align: center;"}
+<img src="./LaTeX/settings_per.png" alt="Einstellungen-Erlaubnisse" />
 
-
+{: refdef}
 
 Einfach entsprechend auf die Felder klicken.
 
