@@ -14,51 +14,34 @@
 
 Scanne folgenden QR-Code und installiere die App (Tutorial zu Installation von APKs: https://www.heise.de/tipps-tricks/Externe-Apps-APK-Dateien-bei-Android-installieren-so-klappt-s-3714330.html):
 
-{:refdef: style="text-align: center;"}
-<img src="../tutorial/LaTeX/frame.png" alt="QR-Code" />
-{: refdef}
+<p align="center"><img src="../tutorial/LaTeX/frame.png" alt="QR-Code" /></p>
 
 ### Erlaubnisse 
 
 Beim Starten der App wird nach App-Erlaubnissen gefragt, die für die Funktionalität der App notwending sind: 
 
-```
-{:refdef: style="text-align: center;"}
-```
-
-<img src="./LaTeX/start_per.png" alt="Erlaubnisnachfrage beim Start" />
-
-```
-{: refdef}
-```
+<p align="center"><img src="./LaTeX/start_per.png" alt="Erlaubnisnachfrage beim Start" /></p>
 
 
 
 Bitte ''Ja'' auswählen, dann taucht eine Liste der installierten Apps auf. Hier soll dann entsprechend die ''Lernstudie'' ausgewählt werden:
 
-{:refdef: style="text-align: center;"}
-<img src="./LaTeX/list_per.png" alt="Liste der installierten Apps" /> 
-
-{: refdef}
+<p align="center"><img src="./LaTeX/list_per.png" alt="Liste der installierten Apps" /> </p>
 
 
 
 Zuletzt soll hier die Erlaubnis gegeben werden und fertig: 
 
-{:refdef: style="text-align: center;"}
-<img src="./LaTeX/item_per.png" alt="Einzelne App" />
-
-{: refdef}
+<p align="center"><img src="./LaTeX/item_per.png" alt="Einzelne App" /> </p>
 
 
 
 
 Falls ''Nein'' oder ''Nicht erinnern'' am Anfang ausgewählt wurde, so kann man die Erlaubnisse nachträglich in den Einstellungen geben (Zahnrad im ersten Bild):
 
-{:refdef: style="text-align: center;"}
-<img src="./LaTeX/settings_per.png" alt="Einstellungen-Erlaubnisse" />
+<p align="center"><img src="./LaTeX/settings_per.png" alt="Einstellungen-Erlaubnisse" /> </p>
 
-{: refdef}
+
 
 Einfach entsprechend auf die Felder klicken.
 
@@ -66,22 +49,20 @@ Einfach entsprechend auf die Felder klicken.
 
 ### Anmelden 
 
-<center><img src="./LaTeX/start_reg.png" alt="Startbildschirm-Anmelden" /> </center>
+<p align="center"><img src="./LaTeX/start_reg.png" alt="Startbildschirm-Anmelden" /> </p>
 
 
 
 
 Gebe einen Namen ein, der 3-6 Zeichen lang geht und nur Buchstaben (a-z) oder Zahlen enthält (0-9): z.B. test11. Gebe zusätzlich dein Geschlecht und deinen Studiengang an. Wenn du nun eine stabile Internetverbindung hast, dann drücke auf ''Anmelden'' (bei Erfolg ist keine Änderung mehr möglich; bei einem Fehlschlag kommt eine entsprechende Meldung).
 
-​																													         **Fehlschlag**
+​																							     					         **Fehlschlag**
 
-<center><img src="./LaTeX/reg_succ.png" alt="Anmelden-Fehlschlag" /> </center>
+<p align="center"><img src="./LaTeX/reg_succ.png" alt="Anmelden-Fehlschlag" /> </p>
 
+​																	     												 		**Erfolg**
 
-
-​																														 		**Erfolg**
-
-<center> <img src="./LaTeX/reg_fail.png" alt="Anmelden-Erfolg" /> </center>
+<p align="center"><img src="./LaTeX/reg_fail.png" alt="Anmelden-Erfolg" /> </p>
 
 
 
@@ -89,31 +70,31 @@ Gebe einen Namen ein, der 3-6 Zeichen lang geht und nur Buchstaben (a-z) oder Za
 
 Es gibt drei weitere Features im Hauptmenü (Klicke den runden Button unten rechts):
 
-<center><img src="./LaTeX/options.png" alt="Optionen" /></center>
+<p align="center"><img src="./LaTeX/options.png" alt="Optionen" /></p>
 
 
 
 Als erstes kann man seine Daten aktualisieren (Daten an meinen Server schicken), falls mal keine Internetverbindung da war oder ähnliches: 
 
-<center><img src="./LaTeX/options_update.png" alt="Optionen-Update" /></center>
+<p align="center"><img src="./LaTeX/options_update.png" alt="Optionen-Update" /></p>
 
 
 
 Als nächstes kann man eine E-Mail an mich schicken, falls die App nicht funktionieren sollte oder andere Probleme bestehen: 
 
-<center><img src="./LaTeX/options_mail.png" alt="Optionen-Mail" /></center>
+<p align="center"><img src="./LaTeX/options_mail.png" alt="Optionen-Mail" /></p>
 
 
 
 Zuletzt kann man sein Token erneuern, falls oft Meldungen kommen, dass man nicht angemeldet sei oder das Token ungültig sei: 
 
-<center><img src="./LaTeX/options_token.png" alt="Optionen-Token" /></center>
+<p align="center"><img src="./LaTeX/options_token.png" alt="Optionen-Token" /></p>
 
 
 
 Falls dies wirklich nötig ist, so schreibe mir bitte eine E-Mail, dann können wir gemeinsam das Token erneuern: 
 
-<center><img src="./LaTeX/token_new.png" alt="Token-Settings" /></center>
+<p align="center"><img src="./LaTeX/token_new.png" alt="Token-Settings" /></p>
 
 
 
@@ -121,18 +102,18 @@ Falls dies wirklich nötig ist, so schreibe mir bitte eine E-Mail, dann können 
 
 Um auf die Lernsitzung zu kommen, musst du oben links klicken (oder von links nach rechts swipen): 
 
-<center><img src="./LaTeX/start_reg.png" alt="Startbildschirm" /></center>
+<p align="center"><img src="./LaTeX/start_reg.png" alt="Startbildschirm" /></p>
 
 
 Dann öffnet sich folgendes, bei dem auf ''Lernsitzung'' geklickt werden soll: 
 
-<center><img src="./LaTeX/nav.png" alt="Navigation" /></center>
+<p align="center"><img src="./LaTeX/nav.png" alt="Navigation" /></p>
 
 
 
 Nun befinden wir uns am Anfang der Lernsitzung: 
 
-<center><img src="./LaTeX/learn_start.png" alt="Lernsitzung-Start" /></center>
+<p align="center"><img src="./LaTeX/learn_start.png" alt="Lernsitzung-Start" /></p>
 
 
 
@@ -140,22 +121,22 @@ Hier kannst du einstellen, wie lang deine Lernsitzung gehen soll: Dauer einer Le
 
 Zuvor aber noch eine Kleinigkeit: Falls man die Einstellung nicht immer wieder neu einrichten möchte, so kannst du bei den Einstellungen (Zahnrad oben rechts) einen Standard festlegen: 
 
-<center><img src="./LaTeX/settings_learn.png" alt="Lernsitzung-Einstellungen" /></center>
+<p align="center"><img src="./LaTeX/settings_learn.png" alt="Lernsitzung-Einstellungen" /></p>
 
 
 
 
 Hier kann man auch den Alarm regulieren (Dauer und Lautstärke). Wenn nämlich eine Phase auf natürliche Weise zu Ende geht, so startet ein Alarm:
 
-<center><img src="./LaTeX/settings_alarm.png" alt="Einstellungen-Alarm" /></center>
+<p align="center"><img src="./LaTeX/settings_alarm.png" alt="Einstellungen-Alarm" /></p>
 
 
 
 Jetzt zur Lernsitzung an sich. Wenn eine Lernsitzung gestartet wurde, so wird die verbleibende Zeit entsprechend auf dem Bildschirm angezeigt (und auch als Benachrichtigung): 
 
-<center><img src="./LaTeX/learn_screen.png" alt="Lernsitzung-Start" /></center>
+<p align="center"><img src="./LaTeX/learn_screen.png" alt="Lernsitzung-Start" /></p>
 
-<center><img src="./LaTeX/learn_noti.png" alt="Lernsitzung-Benachrichtigung" /></center>
+<p align="center"><img src="./LaTeX/learn_noti.png" alt="Lernsitzung-Benachrichtigung" /></p>
 
 
 
@@ -163,7 +144,7 @@ Mit dem Button links unten kann man eine Phase frühzeitig abschließen; mit dem
 
 Zuletzt wird eine Benachrichtigung am Ende einer Lernsitzung geschickt, die darum bittet den Fragebogen auszufüllen. Dieser sollte insgesamt zumindest einmal gemacht werden, am besten einfach ab und zu nach der Lernsitzung oder wenn sich mal Zeit findet: 
 
-<center><img src="./LaTeX/learn_tosurvey.png" alt="Lernsitzung-Ende" /></center>
+<p align="center"><img src="./LaTeX/learn_tosurvey.png" alt="Lernsitzung-Ende" /></p>
 
 
 
@@ -171,31 +152,31 @@ Zuletzt wird eine Benachrichtigung am Ende einer Lernsitzung geschickt, die daru
 
 Um auf den Fragebogen zu kommen, musst du oben links klicken (oder von links nach rechts swipen): 
 
-<center><img src="./LaTeX/start_reg.png" alt="Startbildschirm" /></center>
+<p align="center"><img src="./LaTeX/start_reg.png" alt="Startbildschirm" /></p>
 
 
 
 Dann öffnet sich folgendes, bei dem auf ''Fragebogen'' geklickt werden soll: 
 
-<center><img src="./LaTeX/nav.png" alt="Navigation" /></center>
+<p align="center"><img src="./LaTeX/nav.png" alt="Navigation" /></p>
 
 
 
 Jetzt befindest du dich am Anfangsbildschirm des Fragebogens. Bei einem Klick auf dem Bildschirm startet dann der Fragebogen: 
 
-<center><img src="./LaTeX/survey_start.png" alt="Fragebogen-Start" /></center>
+<p align="center"><img src="./LaTeX/survey_start.png" alt="Fragebogen-Start" /></p>
 
 
 
 Dort sind einige Fragen, die du dann ausfüllen sollst. Mit Swipen oder mit Klicken auf der oberen Leiste kann man entsprechend die Fragen wechseln: 
 
-<center><img src="./LaTeX/survey_question.png" alt="Fragebogen-Frage" /></center>
+<p align="center"><img src="./LaTeX/survey_question.png" alt="Fragebogen-Frage" /></p>
 
 
 
 Am Ende kannst du dann deine Antworten einreichen (mit einem Klick auf den Bildschirm): 
 
-<center><img src="./LaTeX/survey_end.png" alt="Fragebogen-Ende" /></center>
+<p align="center"><img src="./LaTeX/survey_end.png" alt="Fragebogen-Ende" /></p>
 
 
 
@@ -203,54 +184,54 @@ Am Ende kannst du dann deine Antworten einreichen (mit einem Klick auf den Bilds
 
 Um auf die Statistiken zu kommen, musst du oben links klicken (oder von links nach rechts swipen): 
 
-<center><img src="./LaTeX/start_reg.png" alt="Startbildschirm" /></center>
+<p align="center"><img src="./LaTeX/start_reg.png" alt="Startbildschirm" /></p>
 
 
 
 Dann öffnet sich folgendes, bei dem auf ''Statistiken'' geklickt werden soll: 
 
-<center><img src="./LaTeX/nav.png" alt="Navigation" /></center>
+<p align="center"><img src="./LaTeX/nav.png" alt="Navigation" /></p>
 
 
 
 Am Anfangsbildschirm kannst du zwischen zwei Typen von Statistiken auswählen: Oben - Fragebogenstatistiken, Unten - Lernsitzungsstatistiken: 
 
-<center><img src="./LaTeX/stats_start.png" alt="Statistiken-Start" /></center>
+<p align="center"><img src="./LaTeX/stats_start.png" alt="Statistiken-Start" /></p>
 
 
 
 Die Statistiken für den Fragebogen sehen so aus:
 
-<center><img src="./LaTeX/stats_survey.png" alt="Statistiken-Fragebogen" /></center>
+<p align="center"><img src="./LaTeX/stats_survey.png" alt="Statistiken-Fragebogen" /></p>
 
 
 
 Der Anfang der Lernsitzungsstatistiken zeigt eine Auswahl der verschiedenen Lernsitzungen (anhand des Datums und des Endes der Sitzung) und auch eine gesamte Statistik:
 
-<center><img src="./LaTeX/stats_selectionLearn.png" alt="Statistiken-Lernsitzungsliste" /></center>
+<p align="center"><img src="./LaTeX/stats_selectionLearn.png" alt="Statistiken-Lernsitzungsliste" /></p>
 
 
 
 Auf den folgenden Seiten werden nun Beispielbilder gezeigt.
 
-​																											  		 	 **Lernsitzung**
+​																										  		 	 **Lernsitzung**
 
-<center><img src="./LaTeX/stats_session_1.png" alt="Statistiken-Sitzung1" /></center>
+<p align="center"><img src="./LaTeX/stats_session_1.png" alt="Statistiken-Sitzung1" /></p>
 
-<center><img src="./LaTeX/stats_session_2.png" alt="Statistiken-Sitzung2" /></center>
-
-
-
-​																													    	  **Lernphase**
-
-<center><img src="./LaTeX/stats_phase_1.png" alt="Statistiken-Phase1" /></center>
-
-<center><img src="./LaTeX/stats_phase_2.png" alt="Statistiken-Phase2" /></center>
+<p align="center"><img src="./LaTeX/stats_session_2.png" alt="Statistiken-Sitzung2" /></p>
 
 
 
-​																																**Gesamt**
+​																												    	  **Lernphase**
 
-<center><img src="./LaTeX/stats_complete_1.png" alt="Statistiken-Gesamt1" /></center>
+<p align="center"><img src="./LaTeX/stats_phase_1.png" alt="Statistiken-Phase1" /></p>
 
-<center><img src="./LaTeX/stats_complete_2.png" alt="Statistiken-Gesamt2" /></center>
+<p align="center"><img src="./LaTeX/stats_phase_2.png" alt="Statistiken-Phase2" /></p>
+
+
+
+​																															**Gesamt**
+
+<p align="center"><img src="./LaTeX/stats_complete_1.png" alt="Statistiken-Gesamt1" /></p>
+
+<p align="center"><img src="./LaTeX/stats_complete_2.png" alt="Statistiken-Gesamt2" /></p>
