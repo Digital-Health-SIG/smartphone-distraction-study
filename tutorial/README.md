@@ -53,18 +53,13 @@ Einfach entsprechend auf die Felder klicken.
 
 
 
-
 Gebe einen Namen ein, der 3-6 Zeichen lang geht und nur Buchstaben (a-z) oder Zahlen enthält (0-9): z.B. test11. Gebe zusätzlich dein Geschlecht und deinen Studiengang an. Wenn du nun eine stabile Internetverbindung hast, dann drücke auf ''Anmelden'' (bei Erfolg ist keine Änderung mehr möglich; bei einem Fehlschlag kommt eine entsprechende Meldung). 					
 
-```html
-<p align="center"><strong Fehlschlag/></p>
-```
+<p align="center"><strong>Fehlschlag</strong></p>
 
 <p align="center"><img src="./LaTeX/reg_succ.png" alt="Anmelden-Fehlschlag" /> </p>		 	
 
-```html
-<p align="center"><strong Erfolg/></p>
-```
+<p align="center"><strong>Erfolg</strong></p>
 
 <p align="center"><img src="./LaTeX/reg_fail.png" alt="Anmelden-Erfolg" /> </p>
 
@@ -216,11 +211,9 @@ Der Anfang der Lernsitzungsstatistiken zeigt eine Auswahl der verschiedenen Lern
 
 
 
-Auf den folgenden Seiten werden nun Beispielbilder gezeigt.					  		 	
+Auf den folgenden Seiten werden nun Beispielbilder gezeigt:				
 
-```html
-<p align="center"><strong Lernsitzung/></p>
-```
+<p align="center"><strong>Lernsitzung</strong></p>	  		 	
 
 <p align="center"><img src="./LaTeX/stats_session_1.png" alt="Statistiken-Sitzung1" /></p>
 
@@ -228,9 +221,7 @@ Auf den folgenden Seiten werden nun Beispielbilder gezeigt.
 
 
 
-```html
-<p align="center"><strong Lernphase/></p>
-```
+<p align="center"><strong>Lernphase</strong></p>
 
 <p align="center"><img src="./LaTeX/stats_phase_1.png" alt="Statistiken-Phase1" /></p>
 
@@ -238,9 +229,7 @@ Auf den folgenden Seiten werden nun Beispielbilder gezeigt.
 
 
 
-```html
-<p align="center"><strong Gesamt/></p>
-```
+<p align="center"><strong>Gesamt</strong></p>
 
 <p align="center"><img src="./LaTeX/stats_complete_1.png" alt="Statistiken-Gesamt1" /></p>
 
