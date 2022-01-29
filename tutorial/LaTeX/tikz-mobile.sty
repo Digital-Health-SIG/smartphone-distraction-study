@@ -1,0 +1,6 @@
+\ProvidesPackage{tikz-mobile}[2022/01/29 simple roundcut for images]
+\RequirePackage{tikz}
+
+\newcommand\mobile[2][4cm]{\tikz{\fill[black,rounded corners=2pt,path picture={\node at (path picture bounding box.center) {\includegraphics[width=#1]{#2}};}] (0,0) rectangle (#1,#1*16/9)}}
+
+\endinput
