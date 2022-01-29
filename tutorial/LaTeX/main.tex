@@ -5,28 +5,27 @@
 \usepackage{graphicx}
 \usepackage{csquotes} \let\say\enquote
 
-\usepackage[hidelinks]{hyperref}
-
 % customs
 \usepackage{tikz-qr}
 
 \title{App-Tutorial}
 \author{Anton Vlasjuk}
 \date{2022}
+\appto\captionsngerman{\appto\contentsname{\footnote{Bei weiteren Fragen melde dich gerne bei \mail[Anton Vlasjuk]{anton.vlasjuk@uni-ulm.de}.}}}
 
-\graphicspath{{figures/}}
+\graphicspath{{figures}}
 
 \begin{document}
 
 \maketitle
 \tableofcontents
-
+\bigskip\vfill
 
 \section{Installieren}
-Scanne folgenden QR-Code und installiere die App (\href{https://www.heise.de/tipps-tricks/Externe-Apps-APK-Dateien-bei-Android-installieren-so-klappt-s-3714330.html}{Tutorial zur Installation einer APK (Klicke hier)}):
+Scanne folgenden QR-Code und installiere die App als \texttt{.apk}-Datei:\footnote{Ein Tutorial zur Installation einer APK findet sich hier \href{https://www.heise.de/tipps-tricks/Externe-Apps-APK-Dateien-bei-Android-installieren-so-klappt-s-3714330.html}{per Klick}.}
 \vfill
 \begin{center}
-    \qrcode[height=5cm]{https://drive.google.com/file/d/1Mtckvi0GppKgYUsrqOpDYGfOkUgTNhoA/view?usp=sharing}
+    \hidelink{\qrcode[height=5cm]{https://drive.google.com/file/d/1Mtckvi0GppKgYUsrqOpDYGfOkUgTNhoA/view?usp=sharing}}
 \end{center}
 \vfill
 \newpage
@@ -36,7 +35,7 @@ Beim Starten der App wird nach App-Erlaubnissen gefragt, die für die Funktional
 \begin{center}
     \includegraphics[scale=0.4]{start_per.png}
 \end{center}
-\sidenote{Heho}Bitte \say{Ja} auswählen, dann taucht eine Liste der installierten Apps auf. Hier soll dann entsprechend die \say{Lernstudie} ausgewählt werden:
+Bitte \say{Ja} auswählen, dann taucht eine Liste der installierten Apps auf. Hier soll dann entsprechend die \say{Lernstudie} ausgewählt werden:
 \begin{center}
     \includegraphics[scale=0.4]{list_per.png}
 \end{center}
