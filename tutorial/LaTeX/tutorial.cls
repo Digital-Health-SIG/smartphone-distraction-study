@@ -11,9 +11,10 @@
 
 \RequirePackage[final,tracking,kerning]{microtype}
 \AtEndPreamble{\RequirePackage[osf]{cochineal}
+\RequirePackage{FiraMono}
 \RequirePackage[sfdefault]{FiraSans}}
 
-\linespread{1.042}
+\linespread{1.082}
 
 \usepackage[pdfusetitle]{hyperref}
 \hypersetup{pdfborder=0 0 0,colorlinks=true,allcolors=@main}
@@ -82,11 +83,21 @@
 \AddLayersAtBeginOfPageStyle{scrheadings}{t.side.ruler}
 \pagestyle{scrheadings}
 
+\RedeclareSectionCommands[runin=false,beforeskip=1\baselineskip \@plus 1.33\baselineskip \@minus 1\baselineskip,%
+afterskip=\z@]{section,subsection}% we do not care :)
 
 \RequirePackage{ragged2e}
 \def\sidenote{\@ifstar\s@sidenote\@sidenote}
-\def\@sidenote#1{\vphantom{A}\makenote{\protect\RaggedRight#1}}
-\def\s@sidenote#1{\vphantom{A}\makenote*{\RaggedRight#1}}
+\let\sidenoteformat\@empty
+
+\def\t@snc#1{\parbox\marginparwidth{\RaggedRight\sidenoteformat#1\par}}
+\def\@sidenote#1{\vphantom{A}\makenote{\protect\t@snc{#1}}\ignorespaces}
+\def\s@sidenote#1{\vphantom{A}\makenote*{\t@snc{#1}}\ignorespaces}
+
+\usepackage[labelfont=sf,hypcap=true,format=plain,labelsep=none]{caption}
+\DeclareCaptionLabelFormat{t-caption}{#1~#2~$\mid$~}
+\captionsetup{labelformat=t-caption}
+\newcommand\sidefig[3][]{\sidenote{\protect\Centering#2\smallskip\\\protect\captionof{figure}[#3]{#3\protect\bigskip\protect\@par}\ifx!#1!\else\protect\label{#1}\fi}}
 
 \newcommand\mail[2][]{\href{mailto:#2}{\ifx!#1!#2\else#1\fi}}
 
@@ -95,5 +106,9 @@
 \long\def\footnote#1{\phantomsection\stepcounter{side@fn}\label{t@side@fn@tar:\thesection:\the\c@side@fn}\textsuperscript{\@hidelnk{\hyperref[t@side@fn@side:\thesection:\the\c@side@fn]{\@arabic\c@side@fn}}}\sidenote{\protect\t@fnte{\thesection}{\arabic{side@fn}}{#1}}}
 % #1 section; #2 fn; #3 text
 \def\t@fnte#1#2#3{\protect\phantomsection\protect\label{t@side@fn@side:#1:#2}\@hangfrom{\protect\@hidelnk{\protect\hyperref[t@side@fn@tar:#1:#2]{#2}}~\protect\hyphenpenalty1000 \exhyphenpenalty1000~$\mid$~}{#3}}
+
+% meh
+\parskip.66\baselineskip \@plus .33\baselineskip \@minus .33\baselineskip
+\parindent\z@
 
 \endinput

@@ -4,15 +4,21 @@
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{csquotes} \let\say\enquote
+\usepackage{fontawesome}
 
 % customs
 \usepackage{tikz-qr,tikz-mobile}
+\def\mobiledefaultwidth{\marginparwidth}
+% \appto\sidenoteformat{\def\mobiledefaultwidth{\marginparwidth}}
+\usetikzlibrary{arrows.meta}
 
 \title{App-Tutorial}
 \titleheight{7cm}% aktuell noch zum rumprobieren
 \author{Anton Vlasjuk}
 \date{2022}
-\appto\captionsngerman{\appto\contentsname{\footnote{Bei weiteren Fragen melde dich gerne bei \mail[Anton Vlasjuk]{anton.vlasjuk@uni-ulm.de}.}}}
+\appto\captionsngerman{\appto\contentsname{\footnote{Bei weiteren Fragen melde dich gerne bei \mail[Anton Vlasjuk]{anton.vlasjuk@uni-ulm.de}.}}\def\figurename{Abb.}\def\tablename{Tbl.}}
+
+\setcounter{tocdepth}{1}
 
 \graphicspath{{figures}}
 
@@ -29,190 +35,122 @@ Scanne folgenden QR-Code und installiere die App als \texttt{.apk}-Datei:\footno
     \hidelink{\qrcode[height=5cm]{https://drive.google.com/file/d/1Mtckvi0GppKgYUsrqOpDYGfOkUgTNhoA/view?usp=sharing}}
 \end{center}
 \vfill
-\newpage
+\clearpage
 
 \section{Berechtigungen}
-Beim Starten der App wird nach App-Berechtigungen gefragt, die für die Funktionalität der App notwendig sind:
+\sidefig[start-per]{\mobile{start_per.png}}{Die App fragt nach Berechtigungen.}%
+Beim Starten der App wird nach App-Berechtigungen gefragt, welche für die Funktionalität der App notwendig sind.
+Bitte \button{Ja} auswählen, dann taucht eine Liste der installierten Apps auf. Hier soll dann entsprechend die \say{Lernstudie} ausgewählt und zuletzt die Erlaubnis erteilt werden:
 \begin{center}
-    \mobile{start_per.png}
+    \mobile{list_per.png}\quad\tikz{\draw[-Kite,rounded corners=1pt] (0,0) -- (.5,0) |- (1,.75);}\quad\mobile{item_per.png}
 \end{center}
-Bitte \say{Ja} auswählen, dann taucht eine Liste der installierten Apps auf. Hier soll dann entsprechend die \say{Lernstudie} ausgewählt werden:
+
+Falls \button{Nein} oder \button{Nicht Erinnern} am Anfang ausgewählt wurde, so kann man die Berechtigungen nachträglich in den Einstellungen geben (Zahnrad in \autoref{start-per}):
 \begin{center}
-    \includegraphics[scale=0.4]{list_per.png}
-\end{center}
-\newpage
-Zuletzt soll hier die Erlaubnis gegeben werden und fertig:
-\begin{center}
-    \includegraphics[scale=0.4]{item_per.png}
-\end{center}
-Falls \say{Nein} oder \say{Nicht erinnern} am Anfang ausgewählt wurde, so kann man die Berechtigungen nachträglich in den Einstellungen geben (Zahnrad im ersten Bild):
-\begin{center}
-    \includegraphics[scale=0.4]{settings_per.png}
+    \mobile{settings_per.png}
 \end{center}
 Einfach entsprechend auf die Felder klicken.
 
 
 
-\newpage
+\clearpage
 \section{Anmelden}
+\sidefig[start-reg]{\mobile{start_reg.png}}{Die Anmeldung}
+Gebe einen Namen ein, der 3--6 Zeichen lang ist und nur Buchstaben (a--z) oder Zahlen enthält (0--9). Beispielsweise \say{test11}. Gebe zusätzlich dein Geschlecht und deinen Studiengang an. Wenn du nun eine stabile Internetverbindung hast, dann drücke auf \button{Anmelden} (bei Erfolg ist keine Änderung mehr möglich; bei einem Fehlschlag kommt eine entsprechende Meldung).
 \begin{center}
-    \includegraphics[scale=0.5]{start_reg.png}
-\end{center}
-Gebe einen Namen ein, der 3--6 Zeichen lang geht und nur Buchstaben (a--z) oder Zahlen enthält (0--9): z.B. \texttt{test11}. Gebe zusätzlich dein Geschlecht und deinen Studiengang an. Wenn du nun eine stabile Internetverbindung hast, dann drücke auf \say{Anmelden} (bei Erfolg ist keine Änderung mehr möglich; bei einem Fehlschlag kommt eine entsprechende Meldung).
-\newpage
-\begin{center}
-    Fehlschlag:
-\end{center}
-\begin{center}
-    \includegraphics[scale=0.45]{reg_succ.png}
-\end{center}
-\begin{center}
-    Erfolg:
-\end{center}
-\begin{center}
-    \includegraphics[scale=0.45]{reg_fail.png}
+    \tabular{c@{\hskip4em}c}
+        Fehlschlag: & Erfolg: \\
+        \mobile{reg_succ.png} & \mobile{reg_fail.png}
+    \endtabular
 \end{center}
 
 
 
-\newpage
 \section{Weitere Features im Hauptmenü}
-Es gibt drei weitere Features im Hauptmenü (Klicke den runden Button unten rechts):
-\begin{center}
-    \includegraphics[scale=0.45]{options.png}
-\end{center}
-Als erstes kann man seine Daten aktualisieren (Daten an meinen Server schicken), falls mal keine Internetverbindung da war oder ähnliches:
-\begin{center}
-    \includegraphics[scale=0.45]{options_update.png}
-\end{center}
-Als nächstes kann man eine E-Mail an mich schicken, falls die App nicht funktionieren sollte oder andere Probleme bestehen:
-\begin{center}
-    \includegraphics[scale=0.45]{options_mail.png}
-\end{center}
-Zuletzt kann man sein Token erneuern, falls oft Meldungen kommen, dass man nicht angemeldet sei oder das Token ungültig sei:
-\begin{center}
-    \includegraphics[scale=0.45]{options_token.png}
-\end{center}
-\newpage
-\noindent Falls dies wirklich nötig ist, so schreibe mir bitte eine E-Mail, dann können wir gemeinsam das Token erneuern:
-\begin{center}
-    \includegraphics[scale=0.45]{token_new.png}
-\end{center}
+\sidefig[options]{\mobile{options.png}}{Das Hauptmenü inklusive Optionen.}Es gibt drei weitere Features im Hauptmenü. Klicke hierfür auf den runden Button~\icon{options_menu} unten rechts in \autoref{start-reg} und betrachte \autoref{options}:
+\begin{description}
+    \item[\icon{options_update}] Als erstes kann man seine Daten aktualisieren (Daten an meinen Server schicken), falls mal keine Internetverbindung da war oder ähnliches.
+    \item[\icon{options_mail}] Als nächstes kann man eine E-Mail an mich schicken, falls die App nicht funktionieren sollte oder andere Probleme bestehen.
+    \item[\icon{options_token}] Zuletzt kann man sein Token erneuern, falls oft Meldungen kommen, dass man nicht angemeldet oder das Token ungültig sei.
+    Falls dies wirklich nötig ist, so schreibe mir bitte eine E-Mail, dann können wir gemeinsam das Token erneuern (siehe \autoref{token}).
+\end{description}
 
-
-
-\newpage
+\clearpage
+\sidefig[token]{\mobile{token_new.png}}{Ein neues Token anfordern.}
 \section{Lernsitzung}
-Um auf die Lernsitzung zu kommen, musst du oben links klicken (oder von links nach rechts swipen):
+Um auf die Lernsitzung zu kommen, musst du oben links auf das Menü~(\faNavicon) klicken (oder von links nach rechts wischen). Dann öffnet sich folgendes Menü, bei dem auf \say{Lernsitzung} geklickt werden soll:
 \begin{center}
-    \includegraphics[scale=0.45]{start_reg.png}
-\end{center}
-Dann öffnet sich folgendes, bei dem auf \say{Lernsitzung} geklickt werden soll:
-\begin{center}
-    \includegraphics[scale=0.45]{nav_learn.png}
-\end{center}
-\newpage
-\noindent Nun befinden wir uns am Anfang der Lernsitzung:
-\begin{center}
-    \includegraphics[scale=0.6]{learn_start.png}
-\end{center}
-Hier kannst du einstellen, wie lang deine Lernsitzung gehen soll: Dauer einer Lernphase, Pause und die Anzahl der Wiederholungen (damit ist die Gesamtanzahl an Lernphasen gemeint). Wenn man zufrieden mit der Einstellung ist, kann man mit einem Klick auf \say{Start} die Lernphase beginnen.
-
-\newpage
-\noindent Zuvor aber noch eine Kleinigkeit: Falls man die Einstellung nicht immer wieder neu einrichten möchte, so kannst du bei den Einstellungen (Zahnrad oben rechts) einen Standard festlegen:
-\begin{center}
-    \includegraphics[scale=0.45]{settings_learn.png}
-\end{center}
-Hier kann man auch den Alarm regulieren (Dauer und Lautstärke). Wenn nämlich eine Phase auf natürliche Weise zu Ende geht, so startet ein Alarm:
-\begin{center}
-    \includegraphics[scale=0.45]{settings_alarm.png}
-\end{center}
-\newpage
-\noindent Jetzt zur Lernsitzung an sich. Wenn eine Lernsitzung gestartet wurde, so wird die verbleibende Zeit entsprechend auf dem Bildschirm angezeigt (und auch als Benachrichtigung):
-\begin{center}
-    \includegraphics[scale=0.5]{learn_noti.png}\quad
-    \includegraphics[scale=0.5]{learn_screen.png}
-\end{center}
-Mit dem Button links unten kann man eine Phase frühzeitig abschließen; mit dem Button rechts unten kann man die Lernsitzung abbrechen.
-\newpage
-\noindent Zuletzt wird eine Benachrichtigung am Ende einer Lernsitzung geschickt, die darum bittet den Fragebogen auszufüllen. Dieser sollte insgesamt zumindest einmal gemacht werden, am besten einfach ab und zu nach der Lernsitzung oder wenn sich mal Zeit findet:
-\begin{center}
-    \includegraphics[scale=0.5]{learn_tosurvey.png}
+    \mobile{options.png}\quad\tikz{\draw[-Kite,rounded corners=1pt] (0,0) -- (.5,0) |- (1,.75);}\quad\mobile{nav_learn.png}
 \end{center}
 
+Nun befinden wir uns am Anfang der Lernsitzung (\autoref{lernsitzung}).
+\sidefig[lernsitzung]{\mobile{learn_start.png}}{Der Anfang einer Lernsitzung.}
+Hier kannst du einstellen, wie lang deine Lernsitzung gehen soll: Dauer einer Lernphase, Pause und die Anzahl der Wiederholungen (die Gesamtanzahl an Lernphasen). Wenn man mit der Einstellung zufrieden ist, kann man mit einem Klick auf \button{Start} die Lernphase beginnen.
 
+\subsection{Dauerhafte Konfiguration}
+Zuvor aber noch eine Kleinigkeit: Falls man die Einstellung nicht immer wieder neu einrichten möchte, so kannst du bei den Einstellungen (Zahnrad oben rechts) einen Standard festlegen:
+\begin{center}
+    \mobile{settings_learn.png}\qquad\mobile{settings_alarm.png}
+\end{center}
+Hier kann man auch den Alarm regulieren (Dauer und Lautstärke)~--- wenn eine Phase auf natürliche Weise endet, startet ein Alarm.
 
-\newpage
+\subsection{Während einer Lernsitzung}
+Jetzt zur Lernsitzung an sich. Wenn eine Lernsitzung gestartet wurde, so wird die verbleibende Zeit entsprechend auf dem Bildschirm angezeigt (und auch als Benachrichtigung):
+\begin{center}
+    \mobile{learn_noti.png}\qquad
+    \mobile{learn_screen.png}
+\end{center}
+Mit dem \button{\,~{\tiny\faStepForward}~\,}-Button links unten kann man eine Phase frühzeitig abschließen, mit dem \button{\,~{\tiny\faTimesCircle}~\,}-Button rechts unten kann man die Lernsitzung abbrechen.
+
+\smash{\sidefig[survey]{\mobile{learn_tosurvey.png}}{Die Umfrage-Benachrichtigung.}}
+\subsection{Das Ende einer Lernsitzung}
+Zuletzt wird eine Benachrichtigung am Ende einer Lernsitzung geschickt, die darum bittet den Fragebogen auszufüllen(siehe \autoref{survey}). Dieser sollte insgesamt zumindest einmal gemacht werden, am besten einfach ab und zu nach der Lernsitzung oder wenn sich mal Zeit findet.
+
+\clearpage
 \section{Fragebogen}
-Um auf den Fragebogen zu kommen, musst du oben links klicken (oder von links nach rechts swipen):
+Um auf den Fragebogen zu kommen, musst du oben links auf das Menü~(\faNavicon) klicken (oder von links nach rechts wischen). Dann öffnet sich folgendes Menü, bei dem auf \say{Fragebogen} geklickt werden soll:
 \begin{center}
-    \includegraphics[scale=0.45]{start_reg.png}
+    \mobile{start_reg.png}\quad\tikz{\draw[-Kite,rounded corners=1pt] (0,0) -- (.5,0) |- (1,.75);}\quad\mobile{nav_survey.png}
 \end{center}
-Dann öffnet sich folgendes, bei dem auf \say{Fragebogen} geklickt werden soll:
+Jetzt befindest du dich am Anfangsbildschirm des Fragebogens (\autoref{start-survey}). Bei einem Klick auf dem Bildschirm startet dann der Fragebogen.
+\sidefig[start-survey]{\mobile{survey_start.png}}{Startbildschirm des Fragebogens.}%
+Dort sind einige Fragen, die du dann ausfüllen sollst. Mit Wischen oder mit Klicken auf die oberen Reiter, kann man entsprechend die Fragen wechseln:
 \begin{center}
-    \includegraphics[scale=0.45]{nav_survey.png}
+    \mobile{survey_question.png}\quad\tikz{\draw[-Kite,rounded corners=1pt,densely dashed] (0,0) -- (.5,0) |- (1,.75);}\quad\mobile{survey_end.png}
 \end{center}
-\newpage
-\noindent Jetzt befindest du dich am Anfangsbildschirm des Fragebogens. Bei einem Klick auf dem Bildschirm startet dann der Fragebogen:
-\begin{center}
-    \includegraphics[scale=0.45]{survey_start.png}
-\end{center}
-Dort sind einige Fragen, die du dann ausfüllen sollst. Mit Swipen oder mit Klicken auf der oberen Leiste kann man entsprechend die Fragen wechseln:
-\begin{center}
-    \includegraphics[scale=0.45]{survey_question.png}
-\end{center}
-\newpage
-\noindent Am Ende kannst du dann deine Antworten einreichen (mit einem Klick auf den Bildschirm):
-\begin{center}
-    \includegraphics[scale=0.45]{survey_end.png}
-\end{center}
+\noindent Am Ende kannst du dann deine Antworten mit einem Klick auf den Bildschirm einreichen.
 
-
-
-\newpage
+\clearpage
 \section{Statistiken}
-Um auf die Statistiken zu kommen, musst du oben links klicken (oder von links nach rechts swipen):
+Um auf die Statistiken zu kommen, musst du oben links auf das Menü~(\faNavicon) klicken (oder von links nach rechts wischen). Dann öffnet sich folgendes Menü, bei dem auf \say{Statistiken} geklickt werden soll:
 \begin{center}
-    \includegraphics[scale=0.45]{start_reg.png}
+    \mobile{options.png}\quad\tikz{\draw[-Kite,rounded corners=1pt] (0,0) -- (.5,0) |- (1,.75);}\quad\mobile{nav_stats.png}
 \end{center}
-Dann öffnet sich folgendes, bei dem auf ''Statistiken'' geklickt werden soll:
-\begin{center}
-    \includegraphics[scale=0.45]{nav_stats.png}
-\end{center}
-\newpage
-\noindent Am Anfangsbildschirm kannst du zwischen zwei Typen von Statistiken auswählen: Oben - Fragebogenstatistiken, Unten - Lernsitzungsstatistiken:
-\begin{center}
-    \includegraphics[scale=0.45]{stats_start.png}
-\end{center}
+
+\sidefig[stats-open]{\mobile{stats_start.png}}{Anfangs\-bild\-schirm der Statistiken.}
+Beim Anfangsbildschirm (\autoref{stats-open}) kannst du zwischen zwei Typen von Statistiken auswählen. Oben sind die Fragebogenstatistiken und Unten die Lernsitzungsstatistiken.
+
+\subsection{Die Fragebogenstatistiken}
 Die Statistiken für den Fragebogen sehen so aus:
 \begin{center}
-    \includegraphics[scale=0.45]{stats_survey.png}
+    \mobile{stats_survey.png}
 \end{center}
-\newpage
-\noindent Der Anfang der Lernsitzungsstatistiken zeigt eine Auswahl der verschiedenen Lernsitzungen (anhand des Datums und des Endes der Sitzung) und auch eine gesamte Statistik:
+
+\smash{\sidefig[learn-stat-overview]{\vspace*{-2cm}\mobile{stats_selectionLearn.png}}{Die Lern\-sit\-zungs\-statistiken.}}
+\subsection{Die Lernsitzungsstatistiken}
+Der Anfang der Lernsitzungsstatistiken zeigt eine Auswahl der verschiedenen Lernsitzungen (anhand des Datums und des Endes der Sitzung) und auch eine gesamte Statistik (\autoref{learn-stat-overview}).
+\sidefig{\mobile{stats_complete_1.png}\medskip\\
+\mobile{stats_complete_2.png}}{Beispiele für die Gesamtübersicht.}Es folgen einige Beispielbilder.\vfill
+
 \begin{center}
-    \includegraphics[scale=0.45]{stats_selectionLearn.png}
-\end{center}
-Auf den folgenden Seiten werden nun Beispielbilder gezeigt.
+    Eine Lernsitzung:\medskip\\
+    \mobile{stats_session_1.png}\qquad
+    \mobile{stats_session_2.png}
+\end{center}\vfill
 
-\centering Lernsitzung:\nobreak
 \begin{center}
-    \includegraphics[scale=0.45]{stats_session_1.png}\quad
-    \includegraphics[scale=0.45]{stats_session_2.png}
-\end{center}
-
-\centering Lernphase:\nobreak
-\begin{center}
-    \includegraphics[scale=0.45]{stats_phase_1.png}\quad
-    \includegraphics[scale=0.45]{stats_phase_2.png}
-\end{center}
-
-\centering Gesamt:\nobreak
-\begin{center}
-    \includegraphics[scale=0.45]{stats_complete_1.png}\quad
-    \includegraphics[scale=0.45]{stats_complete_1.png}
-\end{center}
-
-
-
+    Eine Lernphase:\medskip\\
+    \mobile{stats_phase_1.png}\qquad
+    \mobile{stats_phase_2.png}
+\end{center}\vfill
 \end{document}
