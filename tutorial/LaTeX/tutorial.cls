@@ -48,7 +48,7 @@
 \savebox\t@titlebox{\parbox\linewidth{\@declaredcolor{@page}\bfseries\@title}}%
 \llap{\@declaredcolor{@main}\rule\paperwidth{\dimexpr.4cm+\ht\t@titlebox+\dp\t@titlebox}}%
 \hspace*{\dimexpr-\paperwidth+\t@left\relax}\t@raise{.15cm+\dp\t@titlebox}{\usebox\t@titlebox\hskip\marginparsep%
-\parbox\marginparwidth{\small\centering\@declaredcolor{@main!50!@page}\textbf{\@author}\\[-\p@]\@date\@par}}%
+\parbox\marginparwidth{\small\centering\@declaredcolor{@main!50!@page}\textbf{\@author}\\[-2.25\p@]\@date\@par}}%
 \endgroup
 \relax
 \endgroup}
