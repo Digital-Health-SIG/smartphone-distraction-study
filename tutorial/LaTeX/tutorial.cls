@@ -32,7 +32,9 @@
 \pagecolor{@page}
 
 \definecolor{@main}{RGB}{163,38,56}
-\newlength\t@tp@height \t@tp@height=8cm
+\newlength\t@tp@height
+\def\titleheight#1{\setlength\t@tp@height{\dimexpr#1}}
+\titleheight{8cm}
 
 \def\t@raise#1#2{\smash{\raisebox{\dimexpr#1}{#2}}}
 \newsavebox\t@titlebox
