@@ -47,7 +47,7 @@
 \tikzpicture[overlay,remember picture]
 \scope[shift=(current page.north west)]
 \savebox0{\uulmlogo}\relax
-\clip(0,0) -- (0,-\t@tp@height+1mm) -- ++(\paperwidth-2.35*\t@tp@padding-\wd0,0) -- ++(.75\t@tp@padding,\t@tp@height) -| cycle;
+\clip(0,0) -- (0,-\t@tp@height+1mm) -- ++(\paperwidth-2.55*\t@tp@padding-\wd0,0) -- ++(.735\t@tp@padding,\t@tp@height) -| cycle;
 \node[below right,outer sep=0pt,inner sep=0pt] {\includegraphics[height=#1]{#2}};
 \endscope
 \endtikzpicture}}
