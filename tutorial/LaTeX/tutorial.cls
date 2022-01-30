@@ -41,6 +41,17 @@
 \def\logopadding#1{\setlength\t@tp@padding{\dimexpr#1}}
 \logopadding{2cm}
 
+\def\titlecode#1{\def\@titlecode{#1}}
+
+\newcommand\titleimage[2][1.2\t@tp@height]{\titlecode{% manuelle tikz spaßeinheiten
+\tikzpicture[overlay,remember picture]
+\scope[shift=(current page.north west)]
+\savebox0{\uulmlogo}\relax
+\clip(0,0) -- (0,-\t@tp@height+1mm) -- ++(\paperwidth-2.35*\t@tp@padding-\wd0,0) -- ++(.75\t@tp@padding,\t@tp@height) -| cycle;
+\node[below right,outer sep=0pt,inner sep=0pt] {\includegraphics[height=#1]{#2}};
+\endscope
+\endtikzpicture}}
+
 \def\t@raise#1#2{\smash{\raisebox{\dimexpr#1}{#2}}}
 \newsavebox\t@titlebox
 \renewcommand\maketitle{\begingroup
@@ -50,7 +61,7 @@
 \def\@left{\hskip\dimexpr-\t@left\relax}\relax
 \@left{\@declaredcolor{@page}\rule\paperwidth\t@tp@height}%
 \llap{\t@raise{\t@tp@height-\height-\t@tp@padding}{\uulmlogo\hskip\t@tp@padding}}%
-\begingroup% Title Banner
+\llap{\smash{\@titlecode}}\begingroup% Title Banner
 \Huge%
 \savebox\t@titlebox{\parbox\linewidth{\@declaredcolor{@page}\bfseries\@title}}%
 \llap{\@declaredcolor{@main}\rule\paperwidth{\dimexpr.4cm+\ht\t@titlebox+\dp\t@titlebox}}%
