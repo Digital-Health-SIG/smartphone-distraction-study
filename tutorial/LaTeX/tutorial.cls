@@ -66,7 +66,7 @@
    \advance\evensidemargin\marginparwidth
    \marginparsep=1cm\relax
    \advance\marginparwidth\dimexpr2.25cm-\marginparsep\relax
-   \advance\textheight2.25cm\relax% because i wanna :c
+   \advance\textheight2.3cm\relax% because i wanna :c
 }
 \recalctypearea
 
