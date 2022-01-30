@@ -37,6 +37,9 @@
 \newlength\t@tp@height
 \def\titleheight#1{\setlength\t@tp@height{\dimexpr#1}}
 \titleheight{8cm}
+\newlength\t@tp@padding
+\def\logopadding#1{\setlength\t@tp@padding{\dimexpr#1}}
+\logopadding{2cm}
 
 \def\t@raise#1#2{\smash{\raisebox{\dimexpr#1}{#2}}}
 \newsavebox\t@titlebox
@@ -46,7 +49,7 @@
 \vspace*{\dimexpr-\t@top-\baselineskip\relax}%
 \def\@left{\hskip\dimexpr-\t@left\relax}\relax
 \@left{\@declaredcolor{@page}\rule\paperwidth\t@tp@height}%
-\llap{\t@raise{\t@tp@height-\height-2cm}{\uulmlogo\hskip2cm}}%
+\llap{\t@raise{\t@tp@height-\height-\t@tp@padding}{\uulmlogo\hskip\t@tp@padding}}%
 \begingroup% Title Banner
 \Huge%
 \savebox\t@titlebox{\parbox\linewidth{\@declaredcolor{@page}\bfseries\@title}}%
