@@ -13,9 +13,13 @@
 \usetikzlibrary{arrows.meta}
 
 \title{App-Tutorial}
-\titleheight{7cm}% aktuell noch zum rumprobieren
 \author{Anton Vlasjuk}
 \date{2022}
+
+\titleheight{6.65cm}% aktuell noch zum rumprobieren
+\logopadding{1.65cm}% padding um uulm -- gilt nur für oben rechts
+\titleimage{corner_1}% mit \titleimage[8cm] kann man eine Manuelle Größe setzen
+
 \appto\captionsngerman{\appto\contentsname{\footnote{Bei weiteren Fragen melde dich gerne bei \mail[Anton Vlasjuk]{anton.vlasjuk@uni-ulm.de}.}}\def\figurename{Abb.}\def\tablename{Tbl.}}
 
 \setcounter{tocdepth}{1}
@@ -138,7 +142,7 @@ Die Statistiken für den Fragebogen sehen so aus:
     \mobile{stats_survey.png}
 \end{center}
 
-\smash{\sidefig[learn-stat-overview]{\vspace*{-2cm}\mobile{stats_selectionLearn.png}}{Die Lern\-sit\-zungs\-statistiken.}}
+\smash{\sidefig[learn-stat-overview]{\vspace*{-1.75cm}\mobile{stats_selectionLearn.png}}{Die Lern\-sit\-zungs\-statistiken.\vspace*{.5em}}}
 \subsection{Die Lernsitzungsstatistiken}
 Der Anfang der Lernsitzungsstatistiken zeigt eine Auswahl der verschiedenen Lernsitzungen (anhand des Datums und des Endes der Sitzung) und auch eine gesamte Statistik (\autoref{learn-stat-overview}).
 \sidefig{\mobile{stats_complete_1.png}\medskip\\
