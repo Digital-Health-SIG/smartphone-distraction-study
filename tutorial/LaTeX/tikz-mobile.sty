@@ -1,0 +1,16 @@
+\ProvidesPackage{tikz-mobile}[2022/01/29 simple roundcut for images]
+\RequirePackage{tikz}
+\usetikzlibrary{shadows}
+
+\definecolor{app@main}{RGB}{97,0,237}
+
+\def\@mobile#1#2{(-#2,-#2) rectangle (#1+#2,#1*16/9+#2)}
+
+\def\mobiledefaultwidth{4.25cm}
+\newcommand*\mobile[2][\mobiledefaultwidth]{\tikz[baseline={([yshift={-.5\ht\strutbox}]current bounding box.center)}]{\fill[black,rounded corners=1.25pt]\@mobile{#1}{.33mm};\path[rounded corners=2pt,path picture={\node at (path picture bounding box.center) {\includegraphics[width=#1]{#2}};},drop shadow={opacity=.1}] \@mobile{#1}\z@;}}
+
+\def\button#1{\kern\p@\strut\smash{\tikz[baseline={([yshift={-.3\ht\strutbox}]current bounding box.center)}]{\node[font=\footnotesize,inner xsep=5.33pt,inner ysep=3.5pt,rounded corners=1pt,text=@page,fill=app@main,scale=.95,minimum height=.6ex]{~\MakeUppercase{#1}~\vphantom{A}}}}\kern\p@}
+
+\def\icon#1{\smash{\raisebox{-.6\dp\strutbox}{\includegraphics[height=.9\baselineskip]{#1}}}}
+
+\endinput
